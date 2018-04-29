@@ -1,0 +1,47 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: '微软雅黑';
+}
+#resume {
+    width: 700px;
+    margin: 20px auto;
+    background-color: aqua; 
+}
+h1 {
+    float: left;
+    width: 130px;
+    text-align: center;
+    padding-top: 80px;
+}
+#content {
+    float: left;
+    width: 570px;
+    background-color: white;
+}
+#resume:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+#inf, #con, #cap, #edu, #pro {
+    margin: 20px 10px;
+}
+ul, dl {
+    margin: 20px 0px;
+}
+dl dd {
+    margin-bottom: 20px;
+}
+li {
+    float: left;
+    margin-right: 30px;
+    list-style: none;
+}
+#inf:after, #con:after {
+    content: '';
+    display: block;
+    clear: both;
+}

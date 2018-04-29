@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>task5</title>
+    <link rel="stylesheet" href="style_1.css">
+</head>
+<body>
+    <input type="button" value="样式1">
+    <input type="button" value="样式2">
+    <input type="button" value="样式3">
+    <div id="resume">
+        <h1>简历</h1>
+        <div id="content">
+            <div id="inf">
+                <h2 class="subhead">基本信息</h2>
+                <ul>
+                    <li>姓名：张三</li>
+                    <li>性别：男</li>
+                    <li>应聘职位：前端工程师</li>
+                </ul>
+            </div>
+            <div id="con">
+                <h2 class="subhead">联系方式</h2>
+                <ul>
+                    <li>手机：12312321212</li>
+                    <li>邮箱：<a href="#">123456789qq.com</a></li>
+                    <li>个人主页：<a href="#">github.git</a></li>
+                </ul>
+            </div>
+            <div id="cap">
+                <h2 class="subhead">能力描述</h2>
+                <dl>
+                    <dt>技术能力</dt>
+                    <dd>熟练掌握html、css、javascript</dd>
+                </dl>
+                <dl>
+                    <dt>综合能力</dt>
+                    <dd>有良好的沟通能力，性格开朗，做事主动，有良好的团队协作能力</dd>
+                </dl>
+            </div>
+            <div id="edu">
+                <h2 class="subhead">教育经历</h2>
+                <dl>
+                    <dt>本科</dt>
+                    <dd>河南科技大学</dd>
+                </dl>
+                <dl>
+                    <dt>研究生</dt>
+                    <dd>郑州大学</dd>
+                </dl>
+            </div>
+            <div id="pro">
+                <h2 class="subhead">项目经历</h2>
+                <dl>
+                    <dt>百度官网</dt>
+                    <dd>参与了百度官网的开发，主要负责登录首页的设计</dd>
+                </dl>
+                <dl>
+                    <dt>手机淘宝</dt>
+                    <dd>团队协作开发的手机淘宝客户端，主要负责天猫超市板块</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+<script>
+(function () {
+    var oInput = document.getElementsByTagName('input');
+    var oLink = document.getElementsByTagName('link')[0];
+    for(var i = 0; i < oInput.length; i++) {
+        oInput[i].index = i + 1;
+        oInput[i].onclick = function () {
+            oLink.href = 'style_' + this.index + '.css'
+        }
+    }
+})();
+</script>
+</body>
+</html>
